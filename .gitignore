@@ -1,3 +1,5 @@
+db.sqlite3
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -89,5 +91,3 @@ ENV/
 
 # Rope project settings
 .ropeproject
-
-.sass-cache/
