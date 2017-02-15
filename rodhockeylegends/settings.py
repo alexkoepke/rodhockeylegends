@@ -28,7 +28,7 @@ SECRET_KEY = os.environ["RHL_SECRET_KEY"]
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["0.0.0.0", "127.0.0.1", "rodhockeylegends.herokuapp.com", "rodhockeylegends.com", "www.rodhockeylegends.com"]
+ALLOWED_HOSTS = ["0.0.0.0", "127.0.0.1", "localhost", "rodhockeylegends.herokuapp.com", "rodhockeylegends.com", "www.rodhockeylegends.com"]
 
 
 # Application definition

@@ -88,23 +88,41 @@ module.exports = function(grunt) {
       }
     },
 
-    // Browser Sync integration
     browserSync: {
-      bsFiles: ["puck/static/puck/bin/*.js", "puck/static/puck/bin/*.css", "!**/node_modules/**/*"],
-      options: {
-        server: {
-          baseDir: "./" // make server from root dir
-        },
-        port: 8000,
-        ui: {
-          port: 8080,
-          weinre: {
-            port: 9090
-          }
-        },
-        open: false
-      }
+        dev: {
+            bsFiles: {
+              src : [
+                  'puck/static/puck/bin/*.js',
+                  'puck/static/puck/bin/*.css',
+                  'puck/**/*.py',
+                  '**/templates/*.html',
+                  '!**/node_modules/**/*'
+              ]
+            },
+            options: {
+                proxy: "127.0.0.1:8000",
+                // watchTask: true
+            }
+        }
     },
+    // Browser Sync integration
+    // browserSync: {
+    //   bsFiles: ["puck/static/puck/bin/*.js", "puck/static/puck/bin/*.css", "!**/node_modules/**/*"],
+    //   options: {
+    //     server: {
+    //       baseDir: "./" // make server from root dir
+    //     },
+    //     port: 8000,
+    //     ui: {
+    //       port: 8080,
+    //       weinre: {
+    //         port: 9090
+    //       }
+    //     },
+    //     open: false
+    //   }
+    // },
+
 
     //  Concat
     concat: {

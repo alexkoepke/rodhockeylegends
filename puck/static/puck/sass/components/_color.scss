@@ -20,6 +20,19 @@ $materialize-red: (
   "darken-4":   #8b1014,
 );
 
+$snow-blue: (
+  "base":       #0089ec,
+  "lighten-5":  #0089ec,
+  "lighten-4":  #0089ec,
+  "lighten-3":  #0089ec,
+  "lighten-2":  #0089ec,
+  "lighten-1":  #0089ec,
+  "darken-1":   #0089ec,
+  "darken-2":   #0089ec,
+  "darken-3":   #0089ec,
+  "darken-4":   #0089ec,
+);
+
 $red: (
   "base":       #F44336,
   "lighten-5":  #FFEBEE,
@@ -358,7 +371,8 @@ $colors: (
   "brown": $brown,
   "blue-grey": $blue-grey,
   "grey": $grey,
-  "shades": $shades
+  "shades": $shades,
+  "snow-blue": $snow-blue
 );
 
 
